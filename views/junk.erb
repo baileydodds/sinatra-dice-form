@@ -1,0 +1,37 @@
+
+<h1>SOMETHING</h2>
+
+
+
+#---
+
+<ol>
+    <li>
+      <em>Result:</em> <strong>3</strong>
+    </li>
+    <li>
+      <em>Result:</em> <strong>2</strong>
+    </li>
+    <li>
+      <em>Result:</em> <strong>1</strong>
+    </li>
+    <li>
+      <em>Result:</em> <strong>1</strong>
+    </li>
+    <li>
+      <em>Result:</em> <strong>5</strong>
+    </li>
+</ol>
+
+  </body>
+</html>
+
+  @dice = params.fetch("dice").to_i
+
+  @sides = params.fetch("sides").to_i
+
+  @rolls = []
+
+  @dice.times do
+    @rolls.push(rand(1..@sides))
+  end
